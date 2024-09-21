@@ -41,7 +41,7 @@ print(f"Линейное время выполнения: {execution_time_linear
 # if __name__ == "__main__":
 #     start_time = time.time()  # Засекаем время до старта
 #
-#     with Pool() as pool:  # Создаем пул процессов
+#     with Pool(processes=4) as pool:  # Создаем пул процессов
 #         pool.map(read_info, file_names)  # Запускаем функцию read_info для каждого файла
 #
 #     end_time = time.time()  # Засекаем время после выполнения
